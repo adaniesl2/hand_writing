@@ -21,9 +21,12 @@ def predictDigit(image):
     return result
 
 # Streamlit 
-st.set_page_config(page_title='Reconocimiento de Dígitos escritos a mano', layout='wide')
-st.title('Reconocimiento de Dígitos escritos a mano')
-st.subheader("Dibuja el digito en el panel  y presiona  'Predecir'")
+st.set_page_config(page_title='Arceus puede reconocer los números escritos a mano', layout='wide')
+st.title('Arceus puede reconocer los números escritos a mano')
+image = Image.open('Arceus.png')
+st.image(image, width=350)
+
+st.subheader("Dibuja el digito en el panel y presiona 'Predecir' para que Arceus lo lea")
 
 # Add canvas component
 # Specify canvas parameters in application
